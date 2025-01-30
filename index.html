@@ -142,6 +142,35 @@
             <p>&copy; 2024 AURAMATION. All rights reserved.</p>
         </div>
     </footer>
+    <body>
+
+    <!-- Widget Configuration -->
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'http://localhost:5678/webhook/7b16de7f-020d-40ea-adc1-af2bc1372d6f/chat', // Your n8n webhook URL
+                route: 'general'
+            },
+            branding: {
+                logo: 'https://i.ibb.co/KjFxkqFr/Blue-Flat-Illustrative-Human-Artificial-Intelligence-Technology-Logo.png', // Your company logo URL
+                name: 'Auramation', // Your company name
+                welcomeText: 'Hi 👋, how can we help?', // Welcome message
+                responseTimeText: 'We typically respond right away' // Response time message
+            },
+            style: {
+                primaryColor: '#854fff', // Primary color
+                secondaryColor: '#6b3fd4', // Secondary color
+                position: 'right', // Position of the widget (left or right)
+                backgroundColor: '#ffffff', // Background color of the chat widget
+                fontColor: '#333333' // Text color for messages and interface
+            }
+        };
+    </script>
+
+    <!-- Widget Script -->
+    <script src="https://cdn.jsdelivr.net/gh/WayneSimpson/n8n-chatbot-template@ba944c3/chat-widget.js"></script>
+
+</body>
 
     <script src="script.js"></script>
 </body>
